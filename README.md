@@ -16,3 +16,5 @@ This function is in live debug mode but did not get a response from your machine
 ```
 
 If you wait a while, it seems to work again - once.
+
+The issue seems to appear only if a large body is posted to a HTTP lambda. Smaller bodies are always okay. Suspect it might be a queue ordering issue when receiving chunks in reply or something?
