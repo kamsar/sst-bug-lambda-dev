@@ -1,4 +1,4 @@
-To reproduce the bug:
+To reproduce the bug, which definitely occurs on MacOS 13.4.1 with the latest sst, and node 18.12.1 - did not test on other platforms:
 
 * This repo has a super simple HTTP lambda which responds with hello world and any request body that was sent to it
 * Run `npx sst dev` to start live lambda. Note that this bug is NOT present if a full deploy is run, only for `sst dev`.
